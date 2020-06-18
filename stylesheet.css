@@ -1,1 +1,63 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'piedra', serif;
+}
+header { 
+    height: 100px;
+    border: 1px solid;
+}
+.img {
+    float: left;
+}
+header img {
+    border: 1px solid;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+    padding: 20px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    }
+header ul li:hover {
+    color: coral;
+}
+header ul li a{
+    transition: 0.6s;
+}
+.container {
+    width: 100%;
+    margin: 0 auto
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+/* menu bisa muncul dan hilang bila di minimize*/
+.mobile-menu:hover {
+    display: pointer;
+}
+#check {
+    display: none;
+}
+@media (max-width: 760px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
